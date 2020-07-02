@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Animated History*/
+
+.road {
+    background: url(images/city.jpg) bottom no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: 892px;
+    height: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.bottom-grass {
+    background: url(images/bottom-grass.png) bottom no-repeat;
+    background-size: 100%;
+    max-width: 892px;
+    width: 100%;
+    height: 66px;
+    margin: 0 auto;
+    position: relative;
+    top: -50px;
+    z-index: 9;
+}
+
+
+/*Blue Truck*/
+
+.blue_truck {
+    background: url(images/blue-truck.png) no-repeat center center;
+    height: 93px;
+    width: 235px;
+    position: relative;
+    top: 68%;
+    animation-name: blue_truck;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blue_truck {
+    0% {
+        left: -100%;
+    }
+    50% {
+        left: 0;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+.blue_truck .blue_truck_rim_one,
+.blue_truck .blue_truck_rim_two {
+    background: url(images/truck-rim.png) no-repeat center center;
+    background-size: cover;
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    top: 75%;
+    animation-name: blue_truck_rim;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.blue_truck .blue_truck_rim_one {
+    left: 23%;
+}
+
+@keyframes blue_truck_rim {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.blue_truck .blue_truck_rim_two {
+    left: 75%;
+}
+
+
+/*Green Truck*/
+
+.green_truck {
+    background: url(images/green-truck.png) no-repeat center center;
+    height: 93px;
+    width: 235px;
+    position: relative;
+    top: 58%;
+    animation-name: green_truck;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes green_truck {
+    0% {
+        right: -100%;
+    }
+    50% {
+        right: 0;
+    }
+    100% {
+        right: 100%;
+    }
+}
+
+.green_truck .green_truck_rim_one,
+.green_truck .green_truck_rim_two {
+    background: url(images/truck-rim.png) no-repeat center center;
+    background-size: cover;
+    height: 18px;
+    width: 18px;
+    position: absolute;
+    top: 75%;
+    animation-name: green_truck_rim;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.green_truck .green_truck_rim_one {
+    left: 20%;
+}
+
+.green_truck .green_truck_rim_two {
+    left: 71%;
+}
+
+@keyframes green_truck_rim {
+    0% {
+        transform: rotate(360deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
